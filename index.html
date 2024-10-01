@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>卡片翻面效果</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+</head>
+<body>
+    <div class="button-container">
+        <button id="startGame">開始遊戲</button>
+        <!-- <button id="showFronts" style="display:none;">顯示全部正面</button>
+        <button id="showBacks" style="display:none;">顯示全部背面</button> -->
+        <div class="theme-selection">
+            <label>
+                <input type="radio" name="theme" value="fruit" checked> 水果主題
+            </label>
+            <label>
+                <input type="radio" name="theme" value="pirate"> 海盜主題
+            </label>
+        </div>
+    </div>
+    <div id="countdown" style="font-size: 24px; margin-bottom: 20px;"></div>
+    <div class="card-container" id="cardContainer"></div>
+    <script src="script.js"></script>
+</body>
+</html>
